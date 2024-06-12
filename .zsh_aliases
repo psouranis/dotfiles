@@ -1,0 +1,8 @@
+alias packagelist="sudo xdg-open /etc/apt/sources.list.d/"
+alias zshconfig="mate ~/.zshrc"
+alias ls="ls --color"
+alias cat="bat"
+alias perf="perf stat -e cycles,instructions,cache-references,cache-misses,branches,branch-misses,task-clock,faults,minor-faults,cs,migrations"
+alias kerneladd="python -m ipykernel install --user --name $(echo $CONDA_PREFIX | awk -F "/" '{print $NF}')"
+alias listal="cat ~/.zsh_aliases"
+
