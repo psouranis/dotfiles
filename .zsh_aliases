@@ -1,8 +1,28 @@
+#!/bin/sh
+
+# System aliases
 alias packagelist="sudo xdg-open /etc/apt/sources.list.d/"
-alias zshconfig="mate ~/.zshrc"
 alias ls="ls --color"
+alias nano="zed"
+
+alias zshconfig="nano ~/.zshrc"
 alias cat="bat"
+alias al="cat ~/.zsh_aliases"
+
+# Python relevant aliases
+
 alias perf="perf stat -e cycles,instructions,cache-references,cache-misses,branches,branch-misses,task-clock,faults,minor-faults,cs,migrations"
 alias kerneladd="python -m ipykernel install --user --name $(echo $CONDA_PREFIX | awk -F "/" '{print $NF}')"
-alias listal="cat ~/.zsh_aliases"
 
+# Utils aliases
+
+alias wez="nano ~/.config/wezterm/wezterm.lua"
+alias obsidian="cd ~/obsidian"
+alias buildencrypt="obsidian && conda activate mkdocs && rm -rf encrypted && mkdocs build && npx staticrypt -r site/* -r"
+
+# Docker images aliases
+alias dsenv="docker exec -it notebooks bash"
+alias notebook="docker-notebook"
+alias postgres="docker-postgres"
+alias msql="docker-mysql"
+alias dlogs="cd ~/dockerlogs"

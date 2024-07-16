@@ -11,6 +11,16 @@ local config = wezterm.config_builder()
 
 -- and finally, return the configuration to wezterm
 
+config.tab_bar_at_bottom = true
+config.use_fancy_tab_bar = false
+config.window_decorations = "RESIZE"
+-- config.window_background_opacity = 0.95
+config.color_scheme = "Dracula" -- # Pandora
+-- config.window_background_image = '/home/panagiotis/Pictures/linux.jpg'
+config.colors = {
+  foreground = 'white',
+  background = 'black',
+}
 
 config.keys = {
   -- This will create a new split and run the `top` program inside it
