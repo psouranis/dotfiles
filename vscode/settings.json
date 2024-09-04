@@ -1,0 +1,54 @@
+{
+    "editor.suggest.statusBar.visible": true,
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": false,
+    "git.autofetch": true,
+    "editor.renderWhitespace": "none",
+    "indentRainbow.errorColor": "rgba(0,0,0,0)",
+    "terminal.integrated.fontFamily": "MesloLGS NF" ,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "editor.fontFamily": "'Jetbrains Mono'",
+    "[cpp]": {
+    
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "[python]": {
+
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnType": true,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit"
+        },
+    },
+    "explorer.excludeGitIgnore": true,
+    "files.associations": {
+        "*.cpp": "cuda-cpp",
+        "*.cppm": "cpp",
+        "*.py": "python"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.gitignore": true,
+        "**/.idea": true,
+        "**/dist": true
+    },
+    "files.autoSave": "afterDelay",
+    "notebook.consolidatedRunButton": true,
+    "interactiveWindow.executeWithShiftEnter": true,
+    "go.toolsManagement.autoUpdate": true,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "editor.fontSize": 14.5
+}
